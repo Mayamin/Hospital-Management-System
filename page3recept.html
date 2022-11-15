@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px ;
+    box-sizing: border-box;
+}
+body {background-color:powderblue;}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.name {
+  display: inline-block;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 5px;
+}
+</style>
+
+<body>
+ <div class="col">
+
+<h1 style="color:green;"> Patient Admission Receipt</h1>
+
+<form action="/action_page.php">
+  
+  
+ <div class="col"><input type="text" class = "form-control" placeholder = "Patient Id: "></div>
+  
+  <div class="col"><input type="text" class = "form-control" placeholder = "Date Of Admission:(DD/MM/YYY) "></div>
+  
+ Name:
+   <div class="name">
+    <input type="text" class = "form-control" placeholder = "First Name" name="firstname">
+  </div>
+  <div class="name">  
+    <input type="text" class = "form-control" placeholder = "Middle Name" name="middlename">
+  </div>
+  <div class="name">
+    <input type="text" class = "form-control" placeholder = "Last Name" name="lastname">
+  </div><br><br>
+
+  <div class="col"><input type="text" class = "form-control" placeholder = "Mobile(1) , Mobile(2)"></div>
+  
+  <h3>Present Address</h3>
+  <div class="col"><input type="text" class = "form-control" placeholder = "StreetNo./ Village"></div>
+                                  
+    <div class="col"> <input type="text" class = "form-control" placeholder = "Street Name"></div>
+  
+<div class="col"><input type="text" class = "form-control" placeholder = "Area"></div>
+  
+ 
+ <div class="col"><input type="text" class = "form-control" placeholder = "Thana"></div>
+  
+<div class="col"><input type="text" class = "form-control" placeholder = "District"></div>
+
+  <h3>Permanent Address</h3>
+  <div class="col"><input type="text" class = "form-control" placeholder = "StreetNo./ Village"></div>
+                                  
+    <div class="col"> <input type="text" class = "form-control" placeholder = "Street Name"></div>
+  
+<div class="col"><input type="text" class = "form-control" placeholder = "Area"></div>
+  
+ 
+ <div class="col"><input type="text" class = "form-control" placeholder = "Thana"></div>
+  
+<div class="col"><input type="text" class = "form-control" placeholder = "District"></div>
+  
+  <h3>Profession</h3> <input type="text" name="Profession" value=""><br>
+  
+  <br>
+  Amount Deposited<input type="text" name="Amount Deposited" value="">
+  <br><br>
+  
+  Cabin No.<input type="text" name="CabinNo." value=""><br>or Ward No.<input type="text" name="orWardNo." value=""><br>Bed No.<input type="text" name="BedNo." value="">
+  <br>
+  
+   <br><br>
+  Signature with date
+  <br><br>
+  
+  Name Of Employee<input type="text" name="NameOfEmployee" value=""><br><br>
+  
+  Designation:<input type="text" name="Designation:" value="">
+  
+    <br>
+  
+  <br>
+  <input type="submit" value="Submit">
+</form> 
+
+</body>
+</html>

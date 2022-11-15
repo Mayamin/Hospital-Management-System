@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px ;
+    box-sizing: border-box;
+}
+body {background-color:powderblue;}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.name {
+  display: inline-block;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 5px;
+}
+</style>
+
+<body>
+<div class="col">
+
+<h1 style="color:green;">     Patient Initial Investigation Form</h1>
+
+
+<form action="/action_page.php">
+  
+  Patient Id:
+  <input type="text" name=" PatientId" value=""><br>
+  
+  
+  
+  Date Of Admission:
+   <div class="col"><input type="text" class = "form-control" placeholder = "Date Of Admission(DD/MM/YYY)"></div>
+
+  
+  
+  
+  Name:
+   <div class="name">
+    <input type="text" class = "form-control" placeholder = "First Name" name="firstname">
+  </div>
+  <div class="name">  
+    <input type="text" class = "form-control" placeholder = "Middle Name" name="middlename">
+  </div>
+  <div class="name">
+    <input type="text" class = "form-control" placeholder = "Last Name" name="lastname">
+  </div><br><br>
+  
+  
+  <h3>Patient personal information</h3>
+  
+  <div class="col"><input type="text" class = "form-control" placeholder = "Height,Weight"></div>
+  
+  
+  
+  Symptoms of the disease:<br>
+  1.<input type="text" name="1." value=""><br>
+  2.<input type="text" name="2." value=""><br>
+  3.<input type="text" name="3." value=""><br>
+  4.<input type="text" name="3." value=""><br>
+  5.<input type="text" name="3." value=""><br>
+  6.<input type="text" name="3." value=""><br>
+  
+  <br>Blood Pressure:<br>
+  
+  Lower<input type="text" name="Lower" value=""><br>Upper<input type="text" name="Upper" value=""><br>
+  
+  <br>General Food Habit:<br> 
+  <br>Breakfast<br>
+  1.<input type="text" name="1." value=""><br>
+  2.<input type="text" name="2." value=""><br>
+  3.<input type="text" name="3." value=""><br>
+  <br>Lunch<br>
+  1.<input type="text" name="1." value=""><br>
+  2.<input type="text" name="2." value=""><br>
+  3.<input type="text" name="3." value=""><br>
+  <br>Dinner<br>
+  1.<input type="text" name="1." value=""><br>
+  2.<input type="text" name="2." value=""><br>
+  3.<input type="text" name="3." value=""><br>
+  
+  <br>Hobby:
+  
+  <select>
+  <option value="game">Game</option>
+  <option value="football">Football</option>
+  <option value="hockey">Hockey</option>
+  <option value="volley Ball">Volley Ball</option>
+  <option value="cricket">Cricket</option>
+  <option value="chess">Chess</option>
+  <option value="all">All</option>
+  <option value="none">None</option>
+  </select><br><br>
+  <select>
+  <option value="others">Others</option>
+  <option value="tourism">Tourism</option>
+  <option value="writing">Writing</option>
+  </select><br>
+
+  <br>Disease Name<input type="text" name="DiseaseName" value="">
+  
+   <br><br>
+  Signature with date
+  <br><br>
+  
+  Doctor Id<input type="text" name="DoctorId" value=""><br><br>
+  
+  Name of Doctor:<input type="text" name="Name of Doctor:" value=""><br><br>
+  
+  Designation:<input type="text" name="Designation:"value=""><br>
+  
+    <br>
+  
+  <br>
+  <input type="submit" value="Submit">
+</form> 
+
+
+</body>
+</html>
